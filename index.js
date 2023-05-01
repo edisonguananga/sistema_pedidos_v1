@@ -35,7 +35,9 @@ const corsOptions = {
     if (existe) {
       callback(null, true);
     } else {
-      callback(new Error("No permitido por CORS, error en index.js"));
+      callback(
+        new Error("No permitido por CORS, error en index.js desde RESTAPIS")
+      );
     }
   },
 };
